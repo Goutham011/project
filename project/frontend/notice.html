@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1px;
+            padding: 1px;
+            display: flex;
+            flex-direction: column;
+            position: relative; 
+            background-color: #f5f5f5;
+        }
+        header {
+            background-image: url('images/head.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100px; 
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            position: relative; 
+            height: 100vh; 
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
+        .option a {
+            color: white; 
+            text-decoration: none; 
+        }
+        .home-button {
+            position: absolute; 
+            top: 5px; 
+            right: 110px; 
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button {
+            position: absolute; 
+            top: 5px; 
+            right: 20px; 
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .divider {
+            position: absolute;
+            top: 5px;
+            right: 100px; 
+            height: 30px;
+            width: 1px;
+            background-color: white;
+        }
+        .notice-board {
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-y: auto; 
+        }
+        .notice {
+            background-color: #f7f7f7;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            max-height: 100px; 
+            overflow: hidden; 
+        }
+        .notice h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .notice p {
+            margin: 0;
+            color: #555;
+        }
+        .notice-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .notice-actions button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .notice-actions button:hover {
+            background-color: #0056b3;
+        }
+        .notice-actions .delete-button {
+            background-color: #dc3545;
+        }
+        .notice-actions .delete-button:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+<body>
+<header></header>
+<div class="container">
+    <div class="container">
+        <div class="sidebar">
+            <h2>Options</h2>
+            <ul>
+                <li class="option"><a href="appointment.html">Book Appointment</a></li>
+                <li class="option"><a href="doctors.html">Doctors Information</a></li>
+                <li class="option"><a href="notice.html">Notice-Board</a></li>
+                <li class="option"><a href="equipment.html">Medical Equipment</a></li>
+            
+                
+            </ul>
+        </div>
+        <div class="content notice-board">
+            <h2>Notice Board</h2>
+            <div class="notice">
+                <h3>Important Announcement</h3>
+                <p>only frontend was done there is more to do.</p>
+                <div class="notice-actions">
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+            <div class="notice">
+                <h3>Event Reminder</h3>
+                <p>13/04/24 is the 1st presentation for SE project</p>
+                <div class="notice-actions">
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+           
+        </div>
+        <button class="home-button" onclick="window.location.href='home.html'">Home</button>
+        <div class="divider"></div>
+        <button class="logout-button" onclick="window.location.href='registration.html'">Logout</button>
+    </div>
+</body>
+</html>
+

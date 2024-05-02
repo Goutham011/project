@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/hospi.jpg'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            max-width: 80%;
+            background-color: #00000090;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #fcfcfc;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #0056b3;
+        }
+        form label{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Registration</h2>
+        <form id="registrationForm" action="/register" method="post">
+            <!-- Form fields -->
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="College email address">
+            
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <label for="hostel">Choose Your Hostel:</label>
+            <select id="hostel" name="hostel" required>
+                <option value="" disabled selected>Select your hostel</option>
+                <option value="hostel1">Agate</option>
+                <option value="hostel2">Amber A</option>
+                <option value="hostel3">Amber B</option>
+                <option value="hostel4">Aquamarine A</option>
+                <option value="hostel5">Aquamarine B</option>
+                <option value="hostel6">Beryl</option>
+                <option value="hostel7">Coral</option>
+                <option value="hostel8">Diamond</option>
+                <option value="hostel9">Emerald</option>
+                <option value="hostel10">Garnet A</option>
+                <option value="hostel11">Garnet B</option>
+                <option value="hostel12">Garnet C</option>
+                <option value="hostel13">Jade</option>
+                <option value="hostel14">Jasper</option>
+                <option value="hostel15">Lapis</option>
+                <option value="hostel19">Pearl</option>
+                <option value="hostel16">Ruby</option>
+                <option value="hostel17">Sapphire</option>
+                <option value="hostel18">Topaz</option>
+                <option value="hostel21">Zircon A</option>
+                <option value="hostel22">Zircon B</option>
+                <option value="hostel23">Zircon C</option>
+                <option value="hostel24">Opal A</option>
+                <option value="hostel25">Opal B</option>
+                <option value="hostel26">Opal C</option>
+                <option value="hostel27">Opal D</option>
+                <option value="hostel28">Opal E</option>
+                <option value="hostel29">Opal F</option>
+            
+            </select>
+        
+            <input type="submit" value="Register">
+        </form>
+        
+        <div class="footer">
+            <p>Already have an account? <a href="login.html">Login here</a></p> 
+        </div>
+    </div>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+        
+            if (!email.endsWith("@nitt.edu")) {
+                alert("Please use your college email address.");
+                return;
+            }
+        
+            this.submit();
+        });
+    </script>
+</body>
+</html>
+

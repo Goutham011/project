@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1px;
+            padding: 1px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        header {
+            background-image: url('images/head.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            position: relative;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 20px ;
+            box-sizing: border-box;
+            height: 120vh;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
+        .option a {
+            color: white;
+            text-decoration: none;
+        }
+        .home-button {
+            position: absolute;
+            top: 103px;
+            right: 110px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button {
+            position: absolute;
+            top: 103px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .divider {
+            position: absolute;
+            top: 103px;
+            right: 100px;
+            height: 30px;
+            width: 1px;
+            background-color: white;
+        }
+        .request {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .request h2 {
+            margin-top: 0;
+        }
+        .request p {
+            margin: 10px 0;
+        }
+        .notification {
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .notification p {
+            margin: 5px 0;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-container button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .accept-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .reject-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Options</h2>
+            <ul>
+                <li class="option"><a href="profile.html">Profile</a></li>
+                <li class="option"><a href="appoin.html">Appointments</a></li>
+                <li class="option"><a href="docnotice.html">Notice-Board</a></li>
+                <li class="option"><a href="request.html">Emergency Requests</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="request">
+                <h2>Emergency Request</h2>
+                <p>Date: April 25, 2024</p>
+                <p>Time: 10:00 AM</p>
+                <p>Reason: Urgent surgery needed for patient X</p>
+                <div class="btn-container">
+                    <button class="accept-btn">Accept</button>
+                    <button class="reject-btn">Reject</button>
+                </div>
+            </div>
+            <div class="notification">
+                <p><strong>Notification:</strong> You have an emergency request to attend the hospital for an urgent surgery for patient X at 10:00 AM on April 25, 2024. Please acknowledge.</p>
+            </div>
+        </div>
+    </div>
+    <button class="home-button" onclick="window.location.href='doctors_home.html'">Home</button>
+    <div class="divider"></div>
+    <button class="logout-button" onclick="window.location.href='registration.html'">Logout</button>
+</body>
+</html>
+

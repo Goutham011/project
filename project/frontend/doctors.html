@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1px;
+            padding: 1px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            background-color: #f5f5f5;
+        }
+        header {
+            background-image: url('images/head.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100px; 
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            position: relative; 
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
+        .option a {
+            color: white;
+            text-decoration: none; 
+        }
+        .home-button, .logout-button {
+            position: absolute;
+            top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .home-button {
+            right: 100px;
+        }
+        .logout-button {
+            right: 10px;
+        }
+        .divider {
+            position: absolute;
+            top: 120px;
+            right: 85px;
+            height: 30px;
+            width: 1px;
+            background-color: white;
+        }
+        .doctor-info {
+            margin-bottom: 40px; 
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px dotted #ccc; 
+        }
+        .doctor-info h3 {
+            margin-top: 0;
+            margin-bottom: 20px; 
+            color: #333;
+        }
+        .doctor-info p {
+            margin: 30;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Options</h2>
+            <ul>
+                <li class="option"><a href="appointment.html">Book Appointment</a></li>
+                <li class="option"><a href="doctors.html">Doctors Information</a></li>
+                <li class="option"><a href="notice.html">Notice-Board</a></li>
+                <li class="option"><a href="equipment.html">Medical Equipment</a></li>
+            
+                
+            </ul>
+        </div>
+        <div class="content">
+            
+            <div class="doctor-info">
+                <h3>Temporary Medical Officers</h3>
+                <p><strong>Dr. K. Chandrika</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+                
+                <p><strong>Dr. K. Maragadham</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. A. Meena Lakshmi</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. R. Priyanka</strong><br>
+                Speciality: MBBS, PGDFM(CMC Vellore)<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. R. Divyalakshmi</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. R. Sethupathy</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. C. Madhavan</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. V. Karthkeyan</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. L. N. Varalakshmi</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. A.B. Veera Santhana Bharathi</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+
+                <p><strong>Dr. G. Karunalini</strong><br>
+                Speciality: MBBS<br>
+                Availability: Monday to Sunday<br>
+                Time: 9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div class="doctor-info">
+                <h3>Visiting Consultants</h3>
+                <p><strong>Dr. N. Devasena</strong><br>
+                Speciality: General Medicine<br>
+                Availability: Monday and Wednesday<br>
+                Time: 2:30 PM - 6:30 PM</p>
+
+                <p><strong>Dr. K. Ananth</strong><br>
+                Speciality: Pediatrician<br>
+                Availability: Monday, Wednesday and Friday<br>
+                Time: 3:30 PM - 5:30 PM</p>
+
+                <p><strong>Dr. Keerthana Priyadrshini</strong><br>
+                Speciality: Obstertics and Gynecologist<br>
+                Availability: Monday, Wednesday and Friday<br>
+                Time: 3:30 PM - 5:30 PM</p>
+
+                <p><strong>Dr. G. Samynathan</strong><br>
+                Speciality: Orthopaedician<br>
+                Availability: Tuesday, Thursday and Saturday<br>
+                Time: 3:30 PM - 5:30 PM</p>
+
+                <p><strong>Dr. M. Mohamed Mansoor</strong><br>
+                Speciality: General Surgeon<br>
+                Availability: Wednesday<br>
+                Time: 5:00 PM - 7:00 PM</p>
+
+                <p><strong>Dr. S. Sujatha</strong><br>
+                Speciality: Ophthalmologist<br>
+                Availability: Friday<br>
+                Time: 4:00 PM - 6:00 PM</p>
+
+                <p><strong>Dr. K. Ronald Roy</strong><br>
+                Speciality: Psychiatrist<br>
+                Availability: Thursday<br>
+                Time: 4:00 PM - 6:00 PM</p>
+
+                <p><strong>Dr. M. Ajay</strong><br>
+                Speciality: ENT Specialist<br>
+                Availability: Tuesday<br>
+                Time: 5:00 PM - 7:00 PM</p>
+
+                <p><strong>Dr. M. Ayyalammai</strong><br>
+                Speciality: Homeopathy<br>
+                Availability: Tuesday, Thursday and Saturday<br>
+                Time: 3:30 PM - 5:30 PM</p>
+
+                <p><strong>Dr. S. Vignesh</strong><br>
+                Speciality: Dentist<br>
+                Availability: Monday, Tuesday and Friday<br>
+                Time: 2:00 PM - 6:00 PM</p>
+
+                <p><strong>Dr. Selvarani</strong><br>
+                Speciality: Physio Therapist<br>
+                Availability: Monday, Tuesday and Wednesday<br>
+                Time: 2:00 PM - 6:00 PM</p>
+
+                <p><strong>Dr. D. Bhuvana</strong><br>
+                Speciality: Physio Therapis<br>
+                Availability: Thursday, Friday and Saturday<br>
+                Time: 2:00 PM - 6:00 PM</p>
+
+                <p><strong>Dr. K. Akila</strong><br>
+                Speciality: Dermatology<br>
+                Availability: Monday, Wednesday, Sunday<br>
+                Time: 11:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+        <button class="home-button" onclick="window.location.href='home.html'">Home</button>
+        <div class="divider"></div>
+        <button class="logout-button" onclick="window.location.href='registration.html'">Logout</button>
+    </body>
+</html>
